@@ -6,7 +6,7 @@ const twilio = require('twilio')
 
 const app = express()
 app.use(cors({
-  origin: 'http://localhost:5173'  // ← only your React app
+  origin: ['http://localhost:5173', 'https://safeher-react.vercel.app']
 }))
 app.use(express.json())
 
